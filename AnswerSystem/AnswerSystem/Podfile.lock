@@ -1,0 +1,82 @@
+PODS:
+  - DeviceKit (1.5.0)
+  - MMBaseComponents/MMIFlyManager (1.1.5):
+    - MMBaseComponents/MMIFlyManager/iflyMSC (= 1.1.5)
+  - MMBaseComponents/MMIFlyManager/iflyMSC (1.1.5)
+  - MMBaseComponents/MMPhotoPick (1.1.5):
+    - DeviceKit (~> 1.5.0)
+    - MMToolHelper/MMBaseTool
+    - QBImagePickerController (~> 3.4.0)
+  - MMBaseComponents/MMRichText (1.1.5):
+    - YYCategories
+    - YYText
+  - MMBaseComponents/MMSDWebImageBridge (1.1.5):
+    - SDWebImage (~> 4.2.1)
+  - MMBusinessComponents (2.1.5):
+    - MMBusinessComponents/MMAnswerQuestions (= 2.1.5)
+    - MMBusinessComponents/MMPay (= 2.1.5)
+  - MMBusinessComponents/MMAnswerQuestions (2.1.5):
+    - MMBaseComponents/MMIFlyManager
+    - MMBaseComponents/MMPhotoPick
+    - MMBaseComponents/MMRichText
+    - MMBaseComponents/MMSDWebImageBridge
+    - MMToolHelper/MMBaseTool
+    - MMToolHelper/MMHelper
+    - ObjectMapper
+    - SnapKit
+    - TagListView
+  - MMBusinessComponents/MMPay (2.1.5):
+    - MMBusinessComponents/MMPay/AliPay (= 2.1.5)
+    - MMBusinessComponents/MMPay/WeChatPay (= 2.1.5)
+  - MMBusinessComponents/MMPay/AliPay (2.1.5)
+  - MMBusinessComponents/MMPay/WeChatPay (2.1.5)
+  - MMToolHelper/MMBaseTool (0.1.2)
+  - MMToolHelper/MMHelper (0.1.2):
+    - SnapKit (~> 4.0.0)
+  - ObjectMapper (3.3.0)
+  - QBImagePickerController (3.4.0)
+  - SDWebImage (4.2.3):
+    - SDWebImage/Core (= 4.2.3)
+  - SDWebImage/Core (4.2.3)
+  - SnapKit (4.0.1)
+  - TagListView (1.3.1)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - DeviceKit
+  - MMBusinessComponents (~> 2.1.5)
+
+SPEC REPOS:
+  https://gitee.com/jydsapp/MMComponentSpecs.git:
+    - MMBaseComponents
+    - MMBusinessComponents
+    - MMToolHelper
+  https://github.com/cocoapods/specs.git:
+    - DeviceKit
+    - ObjectMapper
+    - QBImagePickerController
+    - SDWebImage
+    - SnapKit
+    - TagListView
+    - YYCategories
+    - YYText
+
+SPEC CHECKSUMS:
+  DeviceKit: 883552d64028056216e913a88f892e7e29678e75
+  MMBaseComponents: 956ccd37865d55755111678f95fea99ce8417433
+  MMBusinessComponents: 5314ab1c7b7440e3a234a77e4ec9cdfefaed7d71
+  MMToolHelper: 1008974395a5461c80eddc2da0c870e9520f479e
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+  SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  TagListView: 6dafd34a61021c6db72c0c8e3a044054c9854311
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: c5371b5ec51c906274655faee56cbd14d8f1706e
+
+COCOAPODS: 1.6.0.beta.1

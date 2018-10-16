@@ -1,0 +1,13 @@
+CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/MMBusinessComponents
+ENABLE_BITCODE = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DeviceKit" "${PODS_CONFIGURATION_BUILD_DIR}/MMBaseComponents" "${PODS_CONFIGURATION_BUILD_DIR}/MMToolHelper" "${PODS_CONFIGURATION_BUILD_DIR}/ObjectMapper" "${PODS_CONFIGURATION_BUILD_DIR}/QBImagePickerController" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit" "${PODS_CONFIGURATION_BUILD_DIR}/TagListView" "${PODS_CONFIGURATION_BUILD_DIR}/YYCategories" "${PODS_CONFIGURATION_BUILD_DIR}/YYText" "${PODS_ROOT}/MMBaseComponents/MMIFlyManager/Source/iflyMSC" "${PODS_ROOT}/MMBusinessComponents/MMPay/AliPay"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/MMBusinessComponents/MMPay/WeChatPay/WechatOpenSDK/OpenSDK1.8.0"
+OTHER_LDFLAGS = $(inherited) -l"WeChatSDK" -l"c" -l"c++" -l"sqlite3" -l"z" -framework "AVFoundation" -framework "Accelerate" -framework "AddressBook" -framework "AlipaySDK" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreImage" -framework "CoreLocation" -framework "CoreMotion" -framework "CoreTelephony" -framework "CoreText" -framework "DeviceKit" -framework "Foundation" -framework "ImageIO" -framework "MMBaseComponents" -framework "MMToolHelper" -framework "MobileCoreServices" -framework "ObjectMapper" -framework "PassKit" -framework "Photos" -framework "QBImagePickerController" -framework "QuartzCore" -framework "SDWebImage" -framework "SnapKit" -framework "SystemConfiguration" -framework "TagListView" -framework "UIKit" -framework "YYCategories" -framework "YYText"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/MMBusinessComponents
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES

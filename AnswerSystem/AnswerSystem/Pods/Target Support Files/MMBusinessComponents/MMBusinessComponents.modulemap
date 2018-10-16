@@ -1,0 +1,6 @@
+framework module MMBusinessComponents {
+  umbrella header "MMBusinessComponents-umbrella.h"
+
+  export *
+  module * { export * }
+}

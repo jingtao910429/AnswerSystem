@@ -1,0 +1,2 @@
+# MMBaseComponents
+MemoryMaster base components

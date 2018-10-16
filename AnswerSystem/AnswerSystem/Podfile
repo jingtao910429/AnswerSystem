@@ -1,0 +1,38 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '8.0'
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://gitee.com/jydsapp/MMComponentSpecs.git'
+
+use_frameworks!
+
+def otherLib
+    pod 'DeviceKit'
+end
+
+def businessComponentsDependencies
+    pod 'MMBusinessComponents', '~> 2.1.5'
+end
+
+target 'AnswerSystem' do
+    businessComponentsDependencies
+    otherLib
+end
+
+# Swift 版本声明
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if ['EZSwiftExtensions'].include? target.name
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '3.2'
+                config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+            end
+            else
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.0'
+                config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+            end
+        end
+    end
+end
+
+
